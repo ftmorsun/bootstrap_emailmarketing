@@ -28,6 +28,23 @@ Style image when screen size is 768 or more */
     }
 }
 
+
+/* 767px or less screens */
+@media(max-width: 767px){
+    .image{
+        margin-top: 30px;
+        width: 80%;
+        transform: rotate(0deg);
+    }
+}
+
+/*  1200px or more screens*/
+@media(min-width: 1200px){
+    .r-l-padding{
+        padding: 5% 15%;
+    }
+}
+
 .slogan{
     font-family: "Ubuntu";
     font-size: 2.0rem;
@@ -42,3 +59,37 @@ Style image when screen size is 768 or more */
 .r-l-padding{
     padding: 5% 15%;
 }
+
+/* We can give relative path to style specific elements
+We need to be careful when using existing non unique values 
+In css, class is recommended to use
+So we added class=pricing to style pricing section
+*/
+/* class pricing class col-lg-4 */
+/* we can use the combination og the class values to write relative path */
+/* . is used for class values. # = id*/
+
+.pricing .col-lg-4{
+    margin-top: 5%;
+}
+
+.top-button-45px-space{
+    padding: 45px 0;
+}
+
+.comment{
+    padding: 3% 15%;
+}
+
+/* class of comment tag of p */
+/* We can use the combination of class values and tags */
+/* No . is used for tag values  */
+.comment p{
+    font-size: 1.5rem;
+}
+
+/* Sizing the image */
+.comment img{
+    width: 15%;
+}
+
